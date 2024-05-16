@@ -1,0 +1,265 @@
+@import "../../../assets/styles";
+
+
+.statusmodal {
+  .modal-xl {
+    --bs-modal-width: 75vw;
+  }
+
+  .status-header-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.4vw;
+
+    .status-header {
+      text-align: center;
+      background-color: $fourth-color;
+      padding: 0.8vw 2.8vw;
+      border-radius: 20px;
+      font-size: 1.5vw;
+      font-weight: bold;
+    }
+  }
+
+  .status-container {
+    .row {
+      padding: 0 0;
+    }
+
+    .col-2 {
+      width: 20%;
+    }
+
+    .status {
+      width: 100%;
+      height: 12.5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .state-circle1 {
+        width: 11vw;
+        height: 11vw;
+        border-radius: 50%;
+        border: 0.35vw solid #c2c1c1;
+        position: absolute;
+      }
+
+      .state-circle2 {
+        width: 8.6vw;
+        height: 8.6vw;
+        border-radius: 50%;
+        background-color: #c2c1c1;
+        margin: 20px;
+        position: absolute;
+
+        img {
+          width: 6.25vw;
+          margin: 1.175vw;
+        }
+      }
+    }
+
+    .status-active {
+      width: 100%;
+      height: 12.5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .state-circle1 {
+        width: 11vw;
+        height: 11vw;
+        border-radius: 50%;
+        border: 0.35vw solid $third-color;
+        position: absolute;
+      }
+
+      .state-circle2 {
+        width: 8.6vw;
+        height: 8.6vw;
+        border-radius: 50%;
+        background-color: $third-color;
+        margin: 20px;
+        position: absolute;
+
+        img {
+          width: 6.25vw;
+          margin: 1.175vw;
+        }
+      }
+    }
+
+    .state-label {
+      text-align: center;
+      font-size: 1.3vw;
+      font-weight: 500;
+      margin-top: 0.7vw;
+    }
+
+    .statebutton-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.8vw;
+
+      .button-true {
+        background-color: $sixth-color;
+        color: white;
+        padding: 0.5vw 1.2vw;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 1.2vw;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .button-false {
+        background-color: $seventh-color;
+        color: white;
+        padding: 0.5vw 1.2vw;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 1.2vw;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal-footer {
+    justify-content: center;
+
+    .button-no {
+      width: 7.8vw;
+      padding: 0.4vw;
+      border-radius: 25px;
+      background-color: $eighth-color;
+      color: $second-color;
+      text-align: center;
+      margin: 0.4vw;
+      font-size: 1.2vw;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .button-yes {
+      width: 7.8vw;
+      padding: 0.4vw;
+      border-radius: 25px;
+      background-color: $sixth-color;
+      color: $second-color;
+      text-align: center;
+      margin: 0.4vw;
+      font-size: 1.2vw;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  .status-price-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8vw;
+    margin-top: 1vw;
+    margin-bottom: 0.4vw;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .status-header-container {
+      margin: 18px;
+
+      .status-header {
+        padding: 10px 35px;
+        font-size: 19.2px;
+      }
+    }
+
+    .status-container {
+      .state-label {
+        font-size: 17px;
+      }
+
+      .statebutton-container {
+        margin-top: 10px;
+
+
+        .button-true,
+        .button-false {
+          padding: 6.5px 15.5px;
+          font-size: 15.5px;
+        }
+      }
+    }
+
+    .modal-footer {
+
+      .button-no,
+      .button-yes {
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+        font-size: 15.5px;
+      }
+    }
+
+    .status-price-container {
+      font-size: 23px;
+      margin-top: 13px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .status-container {
+      margin: 0 0 12px 0;
+
+      .status {
+        height: 128px;
+
+        .state-circle1 {
+          width: 115px;
+          height: 115px;
+          border: 3.6px solid #c2c1c1;
+        }
+
+        .state-circle2 {
+          width: 90px;
+          height: 90px;
+
+
+          img {
+            width: 70px;
+            margin: 10px;
+          }
+        }
+      }
+
+      .status-active {
+        height: 128px;
+
+        .state-circle1 {
+          width: 115px;
+          height: 115px;
+          border: 3.6px solid $third-color;
+        }
+
+        .state-circle2 {
+          width: 90px;
+          height: 90px;
+
+
+          img {
+            width: 70px;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    .modal-xl {
+      --bs-modal-width: 720px;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+@import '../../assets/styles';
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $third-color;
+  color: $second-color;
+  height: 4.2vw;
+  padding: 0.5vw;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 4vw;
+      height: 4vw;
+      object-fit: cover;
+      margin: 0vw 0.5vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      img {
+        width: 51px;
+        height: 51px;
+        margin: 0px 6px;
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    .webname {
+      font-size: 1.2vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .webname {
+        font-size: 15px;
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+      .webname {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .menu {
+    margin: 0vw 1vw;
+    text-decoration: none;
+    color: $second-color;
+    font-size: 1.2vw;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .menu {
+      font-size: 15px;
+      margin: 0vw 13px;
+    }
+  }
+
+  .menu-active {
+    color: $first-color;
+    background-color: $fourth-color;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 0.6vw;
+    border-radius: 1.3vw;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .menu-active {
+      font-size: 15px;
+      padding: 8px;
+      border-radius: 17px;
+    }
+  }
+
+  .user {
+    display: inline-block;
+
+    button,
+    button::after {
+      background-color: transparent;
+      border: none;
+    }
+
+    button:hover,
+    button::after:hover {
+      background-color: transparent;
+    }
+
+    .dropdown-toggle,
+    .dropdown-toggle:hover,
+    .dropdown-toggle:active {
+      background-color: transparent;
+    }
+
+    .user-icon {
+      font-size: 2.3vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .user-icon {
+        font-size: 29px;
+      }
+    }
+
+    .dropdown-menu {
+      width: 11.2vw;
+
+      .dropdown-item {
+        font-size: 1.2vw;
+      }
+
+      @media only screen and (max-width: 1280px) {
+        .dropdown-item {
+          font-size: 15px;
+        }
+      }
+
+      .dropdown-item:hover {
+        background-color: $fourth-color;
+        color: $second-color;
+      }
+
+      .logout {
+        display: inline-block;
+        text-align: center;
+        width: 90%;
+        font-size: 1.2vw;
+        background-color: $fifth-color;
+        border: none;
+        border-radius: 0.6vw;
+        padding: 0.4vw;
+        margin: 0.2vw 0.55vw;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 1280px) {
+        .logout {
+          font-size: 15px;
+          border-radius: 8px;
+          padding: 5px;
+          margin: 3px 7px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .dropdown-menu {
+        width: 143px;
+      }
+    }
+  }
+
+  .login-button {
+    font-size: 1.2vw;
+    background-color: $fifth-color;
+    color: $second-color;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.6vw;
+    padding: 0.5vw 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .login-button {
+      font-size: 15px;
+      border-radius: 8px;
+      padding: 6px 13px;
+      margin-right: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .login-button {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .topbar {
+    height: 54px;
+    padding: 6px;
+  }
+}

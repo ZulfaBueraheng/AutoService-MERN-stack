@@ -1,0 +1,269 @@
+@import "../../assets/styles";
+
+.history {
+  .history-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .history-history {
+      width: 17vw;
+      background-color: $fifth-color;
+      padding: 0.6vw;
+      font-size: 1.55vw;
+      font-weight: 700;
+      border-radius: 30px;
+      text-align: center;
+    }
+  }
+
+  .history-filter {
+    padding: 1vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+
+    .history-filter-sub-con {
+      width: 100%;
+    }
+
+    .col1,
+    .col2 {
+      width: 26.7%;
+    }
+
+    label {
+      font-size: 1.05vw;
+    }
+
+    .MuiTextField-root {
+      width: 100%;
+      border-radius: 15px;
+      font-size: 1.25vw;
+    }
+
+    .MuiInputBase-root {
+      font-size: 1.05vw;
+      height: 3vw;
+    }
+
+    .history-filterbutton {
+      width: 8%;
+      height: 3vw;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      font-size: 1.1vw;
+      font-weight: 600;
+      background-color: $fourth-color;
+      align-self: end;
+      cursor: pointer;
+    }
+  }
+
+  .history-result {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.25vw;
+    font-weight: 600;
+    margin: 8px 60px;
+  }
+
+  .history-item {
+    .col-containner {
+      width: 65%;
+    }
+
+    .history-customer {
+      background-color: $nineth-color;
+      border-radius: 15px;
+      margin: 0px 50px 20px 50px;
+      padding: 20px;
+      font-size: 1.25vw;
+      cursor: pointer;
+
+      .history-detail {
+        font-size: 1.35vw;
+        font-weight: 600;
+      }
+
+      .history-repair {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    .history-date {
+      text-align: right;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 1.1vw;
+  }
+
+  .MuiPaginationItem-page {
+    font-size: 1.1vw;
+  }
+
+  .MuiPaginationItem-icon {
+    font-size: 1.1vw;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .history-filter {
+      label {
+        font-size: 16px;
+      }
+
+      .MuiInputBase-root {
+        font-size: 18px;
+        height: 43px;
+      }
+
+      .history-filterbutton {
+        font-size: 16px;
+        height: 43px;
+      }
+    }
+
+    .history-result {
+      font-size: 18px;
+    }
+
+    .history-head {
+      .history-history {
+        width: 245px;
+        padding: 8.7px;
+        font-size: 22.5px;
+      }
+    }
+
+    .history-item {
+      .history-customer {
+        font-size: 18px;
+
+        .history-detail {
+          font-size: 19.5px;
+        }
+      }
+    }
+
+    .pagination {
+      font-size: 16px;
+    }
+
+    .MuiPaginationItem-page {
+      font-size: 16px;
+    }
+
+    .MuiPaginationItem-icon {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .history-filter {
+      label {
+        font-size: 15px;
+      }
+
+      .MuiInputBase-root {
+        font-size: 16px;
+        height: 40px;
+      }
+
+      .history-filterbutton {
+        font-size: 16px;
+        height: 40px;
+      }
+    }
+
+    .history-result {
+      font-size: 16px;
+    }
+
+    .history-item {
+      .history-customer {
+        font-size: 16px;
+
+        .history-detail {
+          font-size: 17.5px;
+        }
+      }
+    }
+
+    .pagination {
+      font-size: 14.5px;
+    }
+
+    .MuiPaginationItem-page {
+      font-size: 14.5px;
+    }
+
+    .MuiPaginationItem-icon {
+      font-size: 14.5px;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    .history-head {
+      .history-history {
+        width: 220px;
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+
+    .history-filter {
+      .col1 {
+        width: 98%;
+      }
+
+      .col2 {
+        margin-top: 10px;
+        width: 38%;
+      }
+
+      label {
+        font-size: 15px;
+      }
+
+      input {
+        height: 40px;
+        font-size: 16px;
+      }
+
+      .history-filterbutton {
+        width: 10%;
+        height: 40px;
+      }
+    }
+
+    .history-item {
+      .col-containner {
+        width: 55%;
+      }
+    }
+
+    .pagination {
+      font-size: 14px;
+    }
+
+    .MuiPaginationItem-page {
+      font-size: 14px;
+    }
+
+    .MuiPaginationItem-icon {
+      font-size: 14px;
+    }
+  }
+}

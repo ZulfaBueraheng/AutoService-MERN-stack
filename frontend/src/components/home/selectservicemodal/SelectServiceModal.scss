@@ -1,0 +1,519 @@
+@import "../../../assets/styles";
+
+.selectservicemodal {
+    .modal-xl {
+        --bs-modal-width: 72vw;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .modal-xl {
+            --bs-modal-width: 650px;
+        }
+    }
+
+    .modal-title {
+        font-size: 1.8vw;
+        padding-left: 1vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-title {
+            font-size: 23px;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .modal-title {
+            padding-left: 10px;
+        }
+    }
+
+    .modal-body {
+        .firststep {
+            .service-searchbox {
+                input {
+                    width: 40%;
+                    height: 3.2vw;
+                    border-radius: 0.95vw;
+                    padding: 0.65vw;
+                    margin: 1.3vw 2.25vw;
+                    font-size: 1.3vw;
+                }
+
+                @media only screen and (max-width: 1280px) {
+                    input {
+                        height: 41px;
+                        padding: 8px;
+                        font-size: 16px;
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    input {
+                        width: 250px;
+                        border-radius: 10px;
+                        margin: 13px 23px;
+                    }
+                }
+            }
+
+            .service-choice {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .input-checkbox {
+                    input {
+                        width: 1.95vw;
+                        height: 1.95vw;
+                        cursor: pointer;
+                    }
+
+                    @media only screen and (max-width: 1280px) {
+                        input {
+                            height: 25px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        input {
+                            width: 20px;
+                        }
+                    }
+                }
+
+                .service-label {
+                    display: inline-block;
+                    margin: 0.65vw 1.3vw;
+
+                    .service-name.not-selected {
+                        background-color: $nineth-color;
+                        height: 3.5vw;
+                        width: 25.5vw;
+                        font-size: 1.5vw;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    @media only screen and (max-width: 1280px) {
+                        .service-name.not-selected {
+                            height: 45px;
+                            font-size: 19px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        .service-name.not-selected {
+                            width: 240px;
+                        }
+                    }
+
+                    .service-name.selected {
+                        background-color: $thirteenth-color;
+                        height: 3.5vw;
+                        width: 25.5vw;
+                        font-size: 1.5vw;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    @media only screen and (max-width: 1280px) {
+                        .service-name.selected {
+                            height: 45px;
+                            font-size: 19px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        .service-name.selected {
+                            width: 240px;
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    .service-label {
+                        margin: 7px 5px;
+                    }
+                }
+
+                .addoption {
+                    margin: 0.65vw 0vw 0vw 3.9vw;
+
+                    input {
+                        height: 3.5vw;
+                        width: 19.1vw;
+                        padding: 0.65vw;
+                        border-radius: 0.33vw;
+                        font-size: 1.2vw;
+                    }
+
+                    @media only screen and (max-width: 1280px) {
+                        input {
+                            height: 45px;
+                            padding: 8px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        input {
+                            width: 180px;
+                            border-radius: 3px;
+                        }
+                    }
+
+                    .addoption-button {
+                        width: 5.75vw;
+                        padding: 0.75vw;
+                        font-size: 1.3vw;
+                        margin-left: 0.25vw;
+                        border-radius: 0.5vw;
+                        text-align: center;
+                        color: $second-color;
+                        background-color: $fourth-color;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+
+                    @media only screen and (max-width: 1280px) {
+                        .addoption-button {
+                            padding: 9px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        .addoption-button {
+                            width: 50px;
+                            margin-left: 1px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    .addoption {
+                        margin: 7px 0px 0px 35px;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                .service-choice {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .secondstep {
+            .selectservice-name {
+                display: inline-block;
+                font-size: 1.5vw;
+                background-color: $fifth-color;
+                padding: 0.65vw 1.5vw;
+                text-align: center;
+                margin-bottom: 0.65vw;
+            }
+
+            @media only screen and (max-width: 1280px) {
+                .selectservice-name {
+                    font-size: 19px;
+                    padding: 8px 19px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .selectservice-table {
+                width: 95%;
+                border-collapse: separate;
+                border-spacing: 2.7vw 1.3vw;
+
+                .selectservice-spare {
+                    width: 26.2vw;
+                    font-size: 1.3vw;
+                    background-color: $nineth-color;
+                    padding: 0.65vw;
+                    border-radius: 1.3vw;
+                    text-align: center;
+                }
+
+                @media only screen and (max-width: 1280px) {
+                    .selectservice-spare {
+                        font-size: 17px;
+                        padding: 8px;
+                        border-radius: 17px;
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    .selectservice-spare {
+                        width: 500px;
+                    }
+                }
+
+                .selectservice-quantity {
+                    input {
+                        width: 9.8vw;
+                        font-size: 1.3vw;
+                        background-color: $nineth-color;
+                        padding: 0.8vw;
+                        border: none;
+                        text-align: center;
+                        border-radius: 1.3vw;
+                    }
+
+                    @media only screen and (max-width: 1280px) {
+                        input {
+                            width: 11.7vw;
+                            font-size: 17px;
+                            padding: 10px;
+                            border-radius: 17px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        input {
+                            width: 80px;
+                        }
+                    }
+                }
+
+                .selectservice-price {
+                    width: 13.1vw;
+                    font-size: 1.3vw;
+                    background-color: $nineth-color;
+                    padding: 0.65vw;
+                    border-radius: 1.3vw;
+                    text-align: center;
+                }
+
+                @media only screen and (max-width: 1280px) {
+                    .selectservice-price {
+                        font-size: 17px;
+                        padding: 8px;
+                        border-radius: 17px;
+                    }
+                }
+
+                @media only screen and (max-width: 1024px) {
+                    .selectservice-price {
+                        width: 120px;
+                    }
+                }
+
+                .delete-spare {
+                    img {
+                        width: 2.8vw;
+                        cursor: pointer;
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        img {
+                            width: 29px;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1280px) {
+                .selectservice-table {
+                    border-spacing: 17px 13px;
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                .selectservice-table {
+                    border-spacing: 10px 13px;
+                }
+            }
+
+            .add-spare {
+                width: 23.4vw;
+                font-size: 1.3vw;
+                background-color: $fourth-color;
+                padding: 0.65vw;
+                border-radius: 1.3vw;
+                text-align: center;
+                margin-left: 4.5vw;
+                margin-bottom: 1.9vw;
+                margin-top: 0.65vw;
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 1280px) {
+                .add-spare {
+                    width: 26vw;
+                    font-size: 17px;
+                    padding: 8px;
+                    border-radius: 17px;
+                    margin-left: 4vw;
+                    margin-bottom: 24px;
+                    margin-top: 8px;
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                .add-spare {
+                    width: 263px;
+                    margin-left: 45px;
+                }
+            }
+
+            .servicefee-table {
+                display: flex;
+                justify-content: space-between;
+                margin-left: 2.3vw;
+                margin-right: 10.45vw;
+
+                .servicefee-label {
+                    width: 13.1vw;
+                    background-color: $twelfth-color;
+                    font-size: 1.3vw;
+                    padding: 0.65vw;
+                    text-align: center;
+                }
+
+                @media only screen and (max-width: 1280px) {
+                    .servicefee-label {
+                        width: 168px;
+                        font-size: 17px;
+                        padding: 8px;
+                    }
+                }
+
+                .servicefee {
+                    input {
+                        width: 12.45vw;
+                        font-size: 1.3vw;
+                        background-color: $thirteenth-color;
+                        padding: 0.8vw;
+                        border: none;
+                        text-align: center;
+                        border-radius: 1.3vw;
+                    }
+
+                    @media only screen and (max-width: 1280px) {
+                        input {
+                            width: 12.5vw;
+                            font-size: 17px;
+                            padding: 10px;
+                            border-radius: 17px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        input {
+                            width: 128px;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1280px) {
+                .servicefee-table {
+                    margin-right: 8.2vw;
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                .servicefee-table {
+                    margin-right: 67px;
+                }
+            }
+        }
+    }
+}
+
+.confirmcanceleditservicemodal {
+    .modal-lg {
+        --bs-modal-width: 50vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-lg {
+            --bs-modal-width: 570px;
+        }
+    }
+
+    .modal-title {
+        font-size: 1.7vw;
+        padding-left: 0.7vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-title {
+            font-size: 22px;
+            padding-left: 9px;
+        }
+    }
+
+    .modal-body {
+        font-size: 1.9vw;
+        margin: 1.9vw 0vw;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-body {
+            font-size: 24px;
+            margin: 24px 0px;
+        }
+    }
+}
+
+.selectservicemodal,
+.confirmcanceleditservicemodal {
+    .modal-footer {
+        justify-content: center;
+
+        .button-no {
+            width: 9.55vw;
+            padding: 0.65vw;
+            border-radius: 1.6vw;
+            background-color: $eighth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.15vw;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .button-no {
+                width: 122px;
+                padding: 8px;
+                border-radius: 20px;
+                margin: 8px;
+                font-size: 15px;
+            }
+        }
+
+        .button-yes {
+            width: 9.55vw;
+            padding: 0.65vw;
+            border-radius: 1.6vw;
+            background-color: $sixth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.15vw;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .button-yes {
+                width: 122px;
+                padding: 8px;
+                border-radius: 20px;
+                margin: 8px;
+                font-size: 15px;
+            }
+        }
+    }
+}

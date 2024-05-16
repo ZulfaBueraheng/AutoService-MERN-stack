@@ -1,0 +1,269 @@
+@import "../../../assets/styles";
+
+.carregis {
+    .carregis-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carregis-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 19.6vw;
+            height: 3.9vw;
+            background-color: $fifth-color;
+            color: $second-color;
+            border-radius: 2vw;
+            font-size: 2.3vw;
+            font-weight: 400;
+            margin-top: 1.5vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .carregis-title {
+                width: 314px;
+                height: 62px;
+                border-radius: 32px;
+                font-size: 37px;
+                margin-top: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 960px) {
+            .carregis-title {
+                width: 280px;
+                height: 55px;
+                border-radius: 30px;
+                font-size: 33px;
+            }
+        }
+    }
+
+    .message {
+        color: $eleventh-color;
+        margin: 1.3vw 0vw 0vw 3.3vw;
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .message {
+            margin: 21px 0px 0px 53px;
+            font-size: 19px;
+        }
+    }
+
+    .customer-form {
+        margin-top: 1.3vw;
+
+        .row {
+            margin-top: 0.65vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .row {
+                margin-top: 10px;
+            }
+        }
+
+        .col {
+            margin: 0vw auto;
+            width: 40vw;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .col {
+                width: 42vw;
+            }
+        }
+
+        label {
+            margin-bottom: 0.33vw;
+            font-size: 1.1vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            label {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (max-width: 960px) {
+            label {
+                font-size: 17px;
+            }
+        }
+
+        .form-control {
+            background-color: $nineth-color;
+            border-radius: 1.3vw;
+            height: 3.6vw;
+            font-size: 1.2vw;
+            padding-left: 1vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .form-control {
+                border-radius: 21px;
+                height: 58px;
+                font-size: 19px;
+                padding-left: 16px;
+            }
+        }
+
+        .form-other {
+            border-radius: 0.65vw;
+            height: 3vw;
+            margin-top: 0.65vw;
+            padding-left: 0.5vw;
+            width: 20vw;
+            font-size: 1.1vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .form-other {
+                border-radius: 10px;
+                height: 48px;
+                margin-top: 10px;
+                padding-left: 8px;
+                font-size: 18px;
+            }
+        }
+
+        select {
+            option {
+                background-color: $second-color;
+            }
+        }
+
+        .danger {
+            color: $eleventh-color;
+            margin: 0.1vw 0vw 0vw 0.7vw;
+            font-size: 1.1vw;
+            font-weight: 400;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .danger {
+                margin: 2px 0px 0px 11px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .customer-form {
+            margin-top: 21px;
+        }
+    }
+
+    .button-carregis {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+
+        .button-regis {
+            width: 13vw;
+            height: 3.25vw;
+            margin: 3.25vw;
+            background-color: $fourth-color;
+            border-radius: 1.3vw;
+            font-size: 1.45vw;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .button-regis {
+                width: 208px;
+                height: 52px;
+                margin: 52px;
+                border-radius: 21px;
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+.confirmbackmodal {
+    .modal-title {
+        font-size: 1.6vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-title {
+            font-size: 21px;
+        }
+    }
+
+    .modal-body {
+        font-size: 2vw;
+        margin: 2vw 0vw;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-body {
+            font-size: 26px;
+        }
+    }
+
+    .modal-footer {
+        justify-content: center;
+
+        .button-no {
+            width: 9.8vw;
+            padding: 0.65vw;
+            border-radius: 1.65vw;
+            background-color: $eighth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.2vw;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .button-no {
+                width: 125px;
+                padding: 8px;
+                border-radius: 21px;
+                margin: 8px;
+                font-size: 15px;
+            }
+        }
+
+        .button-yes {
+            width: 9.8vw;
+            padding: 0.65vw;
+            border-radius: 1.65vw;
+            background-color: $sixth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.2vw;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .button-yes {
+                width: 125px;
+                padding: 8px;
+                border-radius: 21px;
+                margin: 8px;
+                font-size: 15px;
+            }
+        }
+    }
+}

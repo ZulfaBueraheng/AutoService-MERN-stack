@@ -1,0 +1,374 @@
+@import "../../assets/styles";
+
+.home-container {
+  .car-searchbox {
+    display: flex;
+    justify-content: flex-end;
+
+    input {
+      width: 26vw;
+      height: 3.3vw;
+      font-size: 1.3vw;
+      border-radius: 0.9vw;
+      padding: 0.7vw;
+      margin: 1.3vw 2vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      input {
+        width: 333px;
+        height: 42px;
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 9px;
+        margin: 16px 26px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      input {
+        width: 300px;
+      }
+    }
+  }
+
+  .row {
+    padding: 0px;
+
+    .repair-title-container {
+      padding: 0px;
+
+      .repair-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30vw;
+        height: 4vw;
+        border-radius: 0 2vw 2vw 0;
+        color: $second-color;
+        background-color: $sixth-color;
+        letter-spacing: 1px;
+        font-size: 2vw;
+        font-family: $font-family1;
+      }
+
+      @media only screen and (max-width: 1280px) {
+        .repair-title {
+          width: 384px;
+          height: 51px;
+          font-size: 26px;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .repair-title {
+          width: 350px;
+        }
+      }
+    }
+
+    .carregis-result {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      font-size: 1.3vw;
+      font-weight: 600;
+      padding: 0px 2vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .carregis-result {
+        font-size: 17px;
+        padding: 0px 26px;
+      }
+    }
+  }
+
+  .repair-table {
+    display: flex;
+    justify-content: center;
+    margin: 1vw 5vw;
+    width: 90vw;
+    border-collapse: separate;
+    border-spacing: 1vw 1.5vw;
+
+    .repair-car {
+      width: 35vw;
+      height: 4vw;
+      border-radius: 1.4vw;
+      padding: 5px;
+      background-color: $fourth-color;
+      letter-spacing: 1px;
+      font-family: $font-family1;
+      font-weight: 500;
+      font-size: 1.4vw;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .repair-car {
+        width: 50vw;
+        font-size: 15px;
+      }
+    }
+
+    .repair-car-detail {
+      font-size: 1vw;
+      font-weight: 400;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .repair-car-detail {
+        font-size: 13px;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .repair-car-detail {
+        font-size: 12px;
+      }
+    }
+
+    .repait-edit {
+      text-align: center;
+
+      img {
+        width: 3.5vw;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        img {
+          width: 40px;
+        }
+      }
+    }
+
+    .repait-service {
+      width: 13vw;
+      height: 4vw;
+      border-radius: 2vw;
+      background-color: $seventh-color;
+      font-weight: 500;
+      font-size: 1.4vw;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .repait-service {
+        border-radius: 26px;
+        font-size: 18px;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .repait-service {
+        font-size: 17px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .repait-service {
+        width: 110px;
+      }
+    }
+
+    .repair-pay {
+      width: 13vw;
+      height: 4vw;
+      border-radius: 2vw;
+      background-color: $seventh-color;
+      font-weight: 500;
+      font-size: 1.4vw;
+      text-align: center;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .repair-pay {
+        border-radius: 26px;
+        font-size: 18px;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .repair-pay {
+        font-size: 17px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .repair-pay {
+        width: 110px;
+      }
+    }
+
+    .repair-mechanic {
+      width: 13vw;
+      height: 4vw;
+      border-radius: 2vw;
+      background-color: $seventh-color;
+      font-weight: 500;
+      font-size: 1.4vw;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .repair-mechanic {
+        border-radius: 26px;
+        font-size: 18px;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .repair-mechanic {
+        font-size: 17px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .repair-mechanic {
+        width: 110px;
+      }
+    }
+
+    .delete-carregis {
+      img {
+        width: 3.5vw;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .repair-table {
+      margin: 1vw 4vw;
+    }
+  }
+
+  .carregis-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34vw;
+    height: 4vw;
+    background-color: $seventh-color;
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-family: $font-family1;
+    letter-spacing: 1px;
+    border-radius: 2vw;
+    margin-left: 6.5vw;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .carregis-button {
+      width: 39.5vw;
+      height: 41px;
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    .carregis-button {
+      width: 39vw;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .carregis-button {
+      margin-left: 5vw;
+    }
+  }
+}
+
+.confirmdeletecarmodal {
+  .modal-title {
+    font-size: 1.6vw;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .modal-title {
+      font-size: 20px;
+    }
+  }
+
+  .modal-body {
+    font-size: 2vw;
+    margin: 1.5vw 0vw;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .modal-body {
+      font-size: 26px;
+      margin: 19px 0px;
+    }
+  }
+
+  .modal-footer {
+    justify-content: center;
+
+    .button-no {
+      width: 10vw;
+      padding: 0.65vw;
+      border-radius: 1.6vw;
+      background-color: $eighth-color;
+      color: $second-color;
+      text-align: center;
+      margin: 0.6vw;
+      font-size: 1.2vw;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .button-no {
+        width: 128px;
+        padding: 8px;
+        border-radius: 20px;
+        margin: 8px;
+        font-size: 15px;
+      }
+    }
+
+    .button-yes {
+      width: 10vw;
+      padding: 0.65vw;
+      border-radius: 1.6vw;
+      background-color: $sixth-color;
+      color: $second-color;
+      text-align: center;
+      margin: 0.6vw;
+      font-size: 1.2vw;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .button-yes {
+        width: 128px;
+        padding: 8px;
+        border-radius: 20px;
+        margin: 8px;
+        font-size: 15px;
+      }
+    }
+  }
+}

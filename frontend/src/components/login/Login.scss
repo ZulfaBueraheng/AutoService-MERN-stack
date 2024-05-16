@@ -1,0 +1,97 @@
+@import '../../assets/styles';
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+    .title-login {
+        text-align: center;
+        font-size: 3.3vw;
+        font-weight: bold;
+        margin-bottom: 1vw;
+    }
+
+    @media only screen and (max-width: 1440px) {
+        .title-login {
+            font-size: 48px;
+            margin-bottom: 14px;
+        }
+    }
+
+    .login-form {
+        label {
+            font-weight: bold;
+            font-size: 1.45vw;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            label {
+                font-size: 21px;
+            }
+        }
+
+        input {
+            background-color: $seventh-color;
+            border-radius: 1vw;
+            width: 32.75vw;
+            height: 3.3vw;
+            font-size: 1.2vw;
+            padding: 1.1vw;
+            margin: 0.65vw 0px;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            input {
+                border-radius: 14px;
+                width: 472px;
+                height: 48px;
+                font-size: 17px;
+                padding: 16px;
+                margin: 9px 0px;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            input {
+                width: 440px;
+            }
+        }
+
+        .error-form {
+            color: $eighth-color;
+            font-size: 1.2vw;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .error-form {
+                font-size: 17px;
+            }
+        }
+
+        .button-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 13.1vw;
+            height: 3.3vw;
+            font-size: 1.65vw;
+            font-weight: bold;
+            background-color: $fourth-color;
+            color: $second-color;
+            border-radius: 1.95vw;
+            margin: 1.3vw auto;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .button-login {
+                width: 189px;
+                height: 48px;
+                font-size: 24px;
+                border-radius: 28px;
+                margin: 19px auto;
+            }
+        }
+    }
+}

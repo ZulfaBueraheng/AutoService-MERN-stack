@@ -1,0 +1,113 @@
+@import '../../../assets/styles';
+
+.management {
+
+    .management-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.3vw;
+
+        .management-title {
+            width: 19.65vw;
+            background-color: $fifth-color;
+            padding: 0.65vw;
+            font-size: 1.65vw;
+            font-weight: 700;
+            border-radius: 1.95vw;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .management-title {
+                width: 283px;
+                padding: 9px;
+                border-radius: 28px;
+                font-size: 23px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1440px) {
+        .management-container {
+            margin-top: 18px;
+        }
+    }
+
+    .tabview {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3vw;
+        font-weight: 600;
+        margin-top: 1.7vw;
+
+        .non-active {
+            margin: 0px 0.65vw;
+            padding: 0.65vw;
+            border-radius: 1.3vw;
+            background-color: $nineth-color;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .non-active {
+                margin: 0px 9px;
+                padding: 9px;
+                border-radius: 19px;
+            }
+        }
+
+        .active {
+            margin: 0px 0.65vw;
+            padding: 0.65vw;
+            border-radius: 1.3vw;
+            background-color: $fifth-color;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .active {
+                margin: 0px 9px;
+                padding: 9px;
+                border-radius: 19px;
+            }
+        }
+
+        .col-2 {
+            flex: 0 0 22%;
+            margin: 5px 7px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .col-2 {
+                flex: 0 0 157px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .col-2 {
+                flex: 0 0 155px;
+                margin: 5px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1440px) {
+        .tabview {
+            margin-top: 24px;
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .tabview {
+            margin-top: 24px;
+            font-size: 17px;
+        }
+    }
+}

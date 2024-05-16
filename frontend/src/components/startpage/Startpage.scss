@@ -1,0 +1,987 @@
+@import "../../assets/styles";
+
+.startpage {
+  .all-done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vw;
+
+    .all-done1 {
+      font-size: 3vw;
+      margin-bottom: 1vw;
+    }
+
+    .all-done2 {
+      font-size: 2vw;
+    }
+  }
+
+  .no-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vw;
+    font-size: 3vw;
+  }
+
+  .search-bar {
+    input {
+      margin: 1.5vw 0.7vw 0vw 2.3vw;
+      width: 25vw;
+      height: 2.8vw;
+      padding: 0 0.7vw;
+      border-radius: 0.63vw;
+      font-size: 1.2vw;
+      border: 0.1vw solid #000000;
+    }
+
+    .search-button {
+      background-color: $fifth-color;
+      border-radius: 1.2vw;
+      padding: 0.5vw 1.2vw;
+      text-align: center;
+      font-size: 1.2vw;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .startpage-card {
+    border: 0.4vw solid #c2c1c1;
+    border-radius: 2vw;
+    margin: 1.5vw 2.3vw;
+    background-color: #ffffff;
+  }
+
+  .status-header-container {
+    display: flex;
+    justify-content: center;
+
+    .status-header {
+      margin: 1.5vw;
+      text-align: center;
+      background-color: $fourth-color;
+      padding: 1vw 3vw;
+      border-radius: 2vw;
+      font-size: 1.4vw;
+      font-weight: bold;
+
+      .status-header1 {
+        display: inline-block;
+      }
+
+      .status-header2 {
+        display: inline-block;
+        margin-left: 0.25em;
+      }
+    }
+  }
+
+  .status-container {
+    .state {
+      width: 20%;
+      padding: 0;
+    }
+
+    .status-image-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .status {
+      width: 14vw;
+      height: 14vw;
+
+      .state-circle1 {
+        width: 14vw;
+        height: 14vw;
+        border-radius: 50%;
+        border: 0.4vw solid #c2c1c1;
+        position: absolute;
+      }
+
+      .state-circle2 {
+        width: 11vw;
+        height: 11vw;
+        border-radius: 50%;
+        background-color: #c2c1c1;
+        margin: 1.5vw;
+        position: absolute;
+
+        img {
+          width: 8vw;
+          margin: 1.5vw;
+        }
+      }
+    }
+
+    .status-active {
+      width: 14vw;
+      height: 14vw;
+
+      .state-circle1 {
+        width: 14vw;
+        height: 14vw;
+        border-radius: 50%;
+        border: 0.4vw solid $third-color;
+        position: absolute;
+      }
+
+      .state-circle2 {
+        width: 11vw;
+        height: 11vw;
+        border-radius: 50%;
+        background-color: $third-color;
+        margin: 1.5vw;
+        position: absolute;
+
+        img {
+          width: 8vw;
+          margin: 1.5vw;
+        }
+      }
+    }
+
+    .state-label {
+      text-align: center;
+      font-size: 1.4vw;
+      font-weight: 500;
+      margin-top: 1.5vw;
+    }
+
+    .statebutton-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5vw;
+
+      .button-true {
+        background-color: $sixth-color;
+        color: white;
+        width: 9vw;
+        padding: 0.7vw;
+        text-align: center;
+        border-radius: 0.7vw;
+        font-size: 1.4vw;
+        font-weight: 500;
+      }
+
+      .button-false {
+        background-color: $seventh-color;
+        color: white;
+        width: 9vw;
+        padding: 0.7vw;
+        text-align: center;
+        border-radius: 0.7vw;
+        font-size: 1.4vw;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .status-price-container {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-weight: bold;
+  }
+}
+
+.startpage-alldone-button {
+  display: flex;
+  justify-content: flex-end;
+
+  .startpage-alldone {
+    margin-right: 2.3vw;
+    width: 12vw;
+    background-color: $thirteenth-color;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1.2vw;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+}
+
+.startpagemodal {
+  .modal-xl {
+    --bs-modal-width: 85vw;
+  }
+
+  .modal-title {
+    font-size: 1.6vw;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .modal-title {
+      font-size: 20px;
+    }
+  }
+}
+
+.status-history.row {
+  background-color: $nineth-color;
+  border-radius: 15px;
+  margin: 0 1vw 1.5vw 1vw;
+  font-size: 1.4vw;
+  padding: 1.5vw;
+  display: flex;
+
+  .status-detail-container {
+    width: 60%;
+
+    .status-detail {
+      font-size: 1.4vw;
+      font-weight: 600;
+
+      .status-detail1 {
+        display: inline-block;
+      }
+
+      .status-detail2 {
+        display: inline-block;
+        margin-left: 0.25em;
+      }
+    }
+
+    .status-repair {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  .status-date {
+    width: 40%;
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .startpage {
+    .search-bar {
+      input {
+        margin: 21.6px 10px 0px 2.3vw;
+        width: 360px;
+        height: 40.3px;
+        padding: 0 10px;
+        border-radius: 9px;
+        font-size: 17.3px;
+      }
+
+      .search-button {
+        border-radius: 17.3px;
+        padding: 7.2px 17.3px;
+        font-size: 17.3px;
+      }
+    }
+  }
+
+  .startpage-alldone-button {
+    .startpage-alldone {
+      width: 173px;
+      padding: 7.2px 17.3px;
+      font-size: 17.3px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .startpage {
+    .status-header-container {
+      .status-header {
+        margin: 19.2px;
+        padding: 12.8px 38px;
+        border-radius: 25.6px;
+        font-size: 18px;
+      }
+    }
+
+    .status-container {
+      .state-label {
+        font-size: 18px;
+        margin-top: 18px;
+      }
+
+      .statebutton-container {
+        margin-top: 18px;
+
+        .button-true,
+        .button-false {
+          width: 115px;
+          padding: 9px;
+          border-radius: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .status-price-container {
+      font-size: 25.6px;
+      margin-top: 25.6px;
+      margin-bottom: 25.6px;
+    }
+  }
+
+  .status-history.row {
+    margin: 0 12.8px 19.2px 12.8px;
+    font-size: 18px;
+    padding: 19.2px;
+
+    .status-detail-container {
+      .status-detail {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .startpage {
+    .search-bar {
+      input {
+        width: 35.15vw;
+        height: 4vw;
+        font-size: 1.76vw;
+      }
+
+      .search-button {
+        font-size: 1.76vw;
+      }
+    }
+
+    .status-header-container {
+      .status-header {
+        margin: 1.88vw;
+        padding: 1.25vw 3.7vw;
+        border-radius: 2.5vw;
+        font-size: 1.76vw;
+      }
+    }
+
+    .status-container {
+      .state-label {
+        font-size: 1.76vw;
+        margin-top: 1.76vw;
+      }
+
+      .statebutton-container {
+        margin-top: 1.76vw;
+
+        .button-true,
+        .button-false {
+          width: 11.23vw;
+          padding: 0.88vw;
+          border-radius: 1vw;
+          font-size: 1.76vw;
+        }
+      }
+    }
+
+    .status-price-container {
+      font-size: 2.5vw;
+      margin-top: 2.5vw;
+      margin-bottom: 2.5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .startpage {
+    .status-container {
+      .status {
+        width: 135px;
+        height: 135px;
+
+        .state-circle1 {
+          width: 135px;
+          height: 135px;
+          border: 4px solid #c2c1c1;
+        }
+
+        .state-circle2 {
+          width: 105px;
+          height: 105px;
+          margin: 15px;
+
+          img {
+            width: 75px;
+            margin: 15px;
+          }
+        }
+      }
+
+      .status-active {
+        width: 135px;
+        height: 135px;
+
+        .state-circle1 {
+          width: 135px;
+          height: 135px;
+          border: 4px solid $third-color;
+        }
+
+        .state-circle2 {
+          width: 105px;
+          height: 105px;
+          margin: 15px;
+
+          img {
+            width: 75px;
+            margin: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .status-history.row {
+    margin: 0 1.33vw 1.88vw 1.33vw;
+    font-size: 1.88vw;
+    padding: 2vw;
+
+    .status-detail-container {
+      .status-detail {
+        font-size: 1.88vw;
+      }
+    }
+  }
+
+  .startpage-alldone-button {
+    .startpage-alldone {
+      width: 18vw;
+      padding: 0.75vw 1.8vw;
+      font-size: 1.8vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .startpage {
+    .all-done {
+      .all-done1 {
+        font-size: 23px;
+        margin-bottom: 7.68px;
+      }
+
+      .all-done2 {
+        font-size: 15.36px;
+      }
+    }
+
+    .no-result {
+      font-size: 23px;
+    }
+
+    .search-bar {
+      input {
+        height: 30.7px;
+        font-size: 13.5px;
+      }
+
+      .search-button {
+        font-size: 13.5px;
+      }
+    }
+
+    .status-header-container {
+      .status-header {
+        margin: 14.4px;
+        padding: 9.6px 28.4px;
+        border-radius: 19.2px;
+        font-size: 13.5px;
+      }
+    }
+
+    .status-container {
+      .status {
+        width: 17.5vw;
+        height: 17.5vw;
+
+        .state-circle1 {
+          width: 17.5vw;
+          height: 17.5vw;
+          border: 4px solid #c2c1c1;
+        }
+
+        .state-circle2 {
+          width: 13.6vw;
+          height: 13.6vw;
+          margin: 1.95vw;
+
+          img {
+            width: 9.7vw;
+            margin: 1.95vw;
+          }
+        }
+      }
+
+      .status-active {
+        width: 17.5vw;
+        height: 17.5vw;
+
+        .state-circle1 {
+          width: 17.5vw;
+          height: 17.5vw;
+          border: 4px solid $third-color;
+        }
+
+        .state-circle2 {
+          width: 13.6vw;
+          height: 13.6vw;
+          margin: 1.95vw;
+
+          img {
+            width: 9.7vw;
+            margin: 1.95vw;
+          }
+        }
+      }
+
+      .state-label {
+        font-size: 13.5px;
+        margin-top: 13.5px;
+      }
+
+      .statebutton-container {
+        margin-top: 13.5px;
+
+        .button-true,
+        .button-false {
+          width: 86px;
+          padding: 6.75px;
+          border-radius: 6.7px;
+          font-size: 13.5px;
+        }
+      }
+    }
+
+    .status-price-container {
+      font-size: 19.2px;
+      margin-top: 19.2px;
+      margin-bottom: 19.2px;
+    }
+  }
+
+  .startpagemodal {
+    .modal-xl {
+      --bs-modal-width: 98vw;
+    }
+  }
+
+  .status-history.row {
+    margin: 0 10px 14px 10px;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .startpage-alldone-button {
+    .startpage-alldone {
+      width: 138.5px;
+      padding: 5.76px 13.8px;
+      font-size: 13.8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .status-history.row {
+    margin: 0 5vw 14px 5vw;
+    font-size: 16px;
+    padding: 15px;
+
+    .status-detail-container {
+      width: 100%;
+
+      .status-detail {
+        font-size: 16px;
+      }
+
+      .status-repair {
+        margin-right: 10px;
+      }
+    }
+
+    .status-date {
+      width: 100%;
+      text-align: left;
+      margin-top: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .startpage {
+    .all-done {
+      .all-done1 {
+        font-size: 4.26vw;
+        margin-bottom: 1.42vw;
+      }
+
+      .all-done2 {
+        font-size: 2.84vw;
+      }
+    }
+
+    .no-result {
+      font-size: 4.26vw;
+    }
+
+    .search-bar {
+      input {
+        margin: 21.6px 10px 15px 5vw;
+        width: 60vw;
+      }
+    }
+
+    .status-header-container {
+      .status-header {
+        width: 80%;
+        margin: 12px;
+        padding: 7px 5vw;
+        border-radius: 15px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+
+        .status-header1,
+        .status-header2 {
+          display: block;
+        }
+      }
+    }
+
+    .startpage-card {
+      border: 3px solid #c2c1c1;
+      border-radius: 15px;
+      margin: 10px 5vw 20px 5vw;
+      background-color: #ffffff;
+    }
+
+    .status-container {
+      .state {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        margin-bottom: 10px;
+        padding: 0 5%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .status-state-container {
+        margin-left: 20px;
+      }
+
+      .status {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 0px;
+
+        .state-circle1 {
+          width: 110px;
+          height: 110px;
+          border: 4px solid #c2c1c1;
+        }
+
+        .state-circle2 {
+          width: 86px;
+          height: 86px;
+          margin: 12px;
+
+          img {
+            width: 62px;
+            margin: 12px;
+          }
+        }
+      }
+
+      .status-active {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 0px;
+
+        .state-circle1 {
+          width: 110px;
+          height: 110px;
+          border: 4px solid $third-color;
+        }
+
+        .state-circle2 {
+          width: 86px;
+          height: 86px;
+          margin: 12px;
+
+          img {
+            width: 62px;
+            margin: 12px;
+          }
+        }
+      }
+
+      .state-label {
+        font-size: 16px;
+        margin-top: 18px;
+      }
+
+      .statebutton-container {
+        margin-top: 7px;
+
+        .button-true,
+        .button-false {
+          width: 100px;
+          padding: 6px;
+          border-radius: 25px;
+          font-size: 16px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .status-price-container {
+      font-size: 18px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .startpage-alldone-button {
+    .startpage-alldone {
+      margin-right: 5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .status-history.row {
+    padding: 2vw;
+    margin: 0 5px 14px 5px;
+    font-size: 3.33vw;
+
+    .status-detail-container {
+      .status-detail {
+        font-size: 3.33vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .startpage {
+    .all-done {
+      .all-done1 {
+        font-size: 15.5px;
+        margin-bottom: 5px;
+      }
+
+      .all-done2 {
+        font-size: 11px;
+      }
+    }
+
+    .no-result {
+      font-size: 15.5px;
+    }
+
+    .search-bar {
+      input {
+        margin: 15px 7px 10px 2.3vw;
+        height: 25px;
+        padding: 0 7px;
+        font-size: 12px;
+      }
+
+      .search-button {
+        padding: 5.5px 11px;
+        font-size: 13px;
+      }
+    }
+
+    .status-header-container {
+      .status-header {
+        padding: 7px 7px;
+        border-radius: 12px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .status-history.row {
+    padding: 8px 5px;
+    margin: 0 0px 14px 0px;
+    font-size: 12px;
+
+    .status-detail-container {
+      .status-detail {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .startpage-alldone-button {
+    .startpage-alldone {
+      width: 135px;
+      padding: 5.76px 13.8px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .startpagemodal {
+    .modal-body {
+      padding: 15px 7px;
+    }
+  }
+
+  .status-history.row {
+    padding: 8px 5px;
+    font-size: 12px;
+
+    .status-detail-container {
+      .status-detail {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .startpage-alldone-button {
+    .startpage-alldone {
+      width: 130px;
+      padding: 5.76px 13.8px;
+      font-size: 12.5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .startpage {
+    .all-done {
+      .all-done1 {
+        font-size: 13px;
+        margin-bottom: 3px;
+      }
+
+      .all-done2 {
+        font-size: 10px;
+      }
+    }
+
+    .no-result {
+      font-size: 13px;
+    }
+
+    .status-header-container {
+      .status-header {
+        font-size: 11px;
+      }
+    }
+
+    .startpage-card {
+      border: 0.6vw solid #c2c1c1;
+      border-radius: 3vw;
+      margin: 1.5vw 4vw;
+      background-color: #ffffff;
+    }
+
+    .status-container {
+      .state {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        margin-bottom: 10px;
+        padding: 0 5%;
+      }
+
+      .status-image-container {
+        width: 50%;
+      }
+
+      .status-state-container {
+        width: 50%;
+      }
+
+      .status {
+        width: 30vw;
+        height: 30vw;
+        margin-bottom: 0px;
+
+        .state-circle1 {
+          width: 30vw;
+          height: 30vw;
+          border: 4px solid #c2c1c1;
+        }
+
+        .state-circle2 {
+          width: 24vw;
+          height: 24vw;
+          margin: 3vw;
+
+          img {
+            width: 17vw;
+            margin: 3.5vw;
+          }
+        }
+      }
+
+      .status-active {
+        width: 30vw;
+        height: 30vw;
+        margin-bottom: 0px;
+
+        .state-circle1 {
+          width: 30vw;
+          height: 30vw;
+          border: 4px solid $third-color;
+        }
+
+        .state-circle2 {
+          width: 24vw;
+          height: 24vw;
+          margin: 3vw;
+
+          img {
+            width: 17vw;
+            margin: 3.5vw;
+          }
+        }
+      }
+
+      .state-label {
+        font-size: 5vw;
+        margin-top: 3.5vw;
+      }
+
+      .statebutton-container {
+        margin-top: 2vw;
+
+        .button-true,
+        .button-false {
+          width: 30vw;
+          padding: 2vw;
+          border-radius: 2.5vw;
+          font-size: 5vw;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .status-price-container {
+      font-size: 5.5vw;
+      margin-top: 1vw;
+      margin-bottom: 5.5vw;
+    }
+  }
+}

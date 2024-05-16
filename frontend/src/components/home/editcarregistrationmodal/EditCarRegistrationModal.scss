@@ -1,0 +1,252 @@
+@import "../../../assets/styles";
+
+.editcarregismodal {
+    .modal-xl {
+        --bs-modal-width: 72vw;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .modal-xl {
+            --bs-modal-width: 55vw;
+        }
+    }
+
+    .modal-title {
+        font-size: 1.55vw;
+        margin-left: 0.65vw;
+    }
+
+    @media only screen and (max-width: 1440px) {
+        .modal-title {
+            font-size: 22px;
+            margin-left: 9px;
+        }
+    }
+
+    .message {
+        color: $eleventh-color;
+        margin-top: 0.65vw;
+        margin-left: 0.65vw;
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .message {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .editcustomer-form {
+        margin-top: 1.3vw;
+
+        .row {
+            margin-top: 0.65vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .row {
+                margin-top: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .row {
+                margin-top: 0px;
+            }
+        }
+
+        .col {
+            margin: 0vw auto;
+            width: 30vw;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .col {
+                width: 45vw;
+            }
+        }
+
+        label {
+            margin-bottom: 0.33vw;
+            font-size: 1.1vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            label {
+                margin-bottom: 5px;
+                font-size: 17px;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            label {
+                margin-top: 10px;
+            }
+        }
+
+        .form-control {
+            background-color: $nineth-color;
+            border-radius: 1.3vw;
+            height: 3.6vw;
+            font-size: 1.2vw;
+            padding-left: 1vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .form-control {
+                border-radius: 20px;
+                height: 55px;
+                font-size: 18px;
+                padding-left: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .form-control {
+                margin: 0px;
+            }
+        }
+
+        .form-other {
+            border-radius: 0.65vw;
+            height: 3vw;
+            margin-top: 0.65vw;
+            padding-left: 0.5vw;
+            width: 20vw;
+            font-size: 1.1vw;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .form-other {
+                border-radius: 10px;
+                height: 46px;
+                margin-top: 10px;
+                padding-left: 8px;
+                font-size: 17px;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .form-other {
+                width: 250px;
+            }
+        }
+
+        select {
+            option {
+                background-color: $second-color;
+            }
+        }
+
+        .danger {
+            color: $eleventh-color;
+            margin: 0.1vw 0vw 0vw 0.7vw;
+            font-size: 1.1vw;
+            font-weight: 400;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .danger {
+                margin: 2px 0px 0px 11px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .customer-form {
+            margin-top: 20px;
+        }
+    }
+}
+
+.confirmbackmodal {
+    .modal-lg {
+        --bs-modal-width: 50vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-lg {
+            --bs-modal-width: 570px;
+        }
+    }
+
+    .modal-title {
+        font-size: 1.7vw;
+        padding-left: 0.7vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-title {
+            font-size: 22px;
+            padding-left: 9px;
+        }
+    }
+
+    .modal-body {
+        font-size: 1.9vw;
+        margin: 1.9vw 0vw;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-body {
+            font-size: 24px;
+            margin: 24px 0px;
+        }
+    }
+}
+
+.editcarregismodal,
+.confirmbackmodal {
+    .modal-footer {
+        justify-content: center;
+
+        .button-no {
+            width: 9.8vw;
+            padding: 0.65vw;
+            border-radius: 1.65vw;
+            background-color: $eighth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.2vw;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .button-no {
+                width: 141px;
+                padding: 9px;
+                border-radius: 24px;
+                margin: 9px;
+                font-size: 17px;
+            }
+        }
+
+        .button-yes {
+            width: 9.8vw;
+            padding: 0.65vw;
+            border-radius: 1.65vw;
+            background-color: $sixth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.2vw;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .button-yes {
+                width: 141px;
+                padding: 9px;
+                border-radius: 24px;
+                margin: 9px;
+                font-size: 17px;
+            }
+        }
+    }
+}

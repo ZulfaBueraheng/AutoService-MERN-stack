@@ -1,0 +1,311 @@
+@import '../../../assets/styles';
+
+.service-management {
+
+    .servicemanagement-data {
+        margin: 2.3vw 6.55vw;
+
+        .search-title {
+            font-size: 1.45vw;
+            font-weight: 600;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .search-title {
+                font-size: 21px;
+            }
+        }
+
+        .input-search {
+            input {
+                margin: 0.65vw 0vw;
+                width: 39.25vw;
+                height: 3.3vw;
+                font-size: 1.2vw;
+                padding: 0.65vw;
+                border-radius: 0.5vw;
+            }
+
+            @media only screen and (max-width: 1440px) {
+                input {
+                    font-size: 17px;
+                }
+            }
+
+            @media only screen and (max-width: 1280px) {
+                input {
+                    margin: 8px 0px;
+                    height: 42px;
+                    padding: 8px;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 960px) {
+            .input-search {
+                width: 81.5%;
+            }
+        }
+
+        .add-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 11.8vw;
+            height: 3.3vw;
+            font-size: 1.2vw;
+            background-color: $third-color;
+            color: $second-color;
+            border: none;
+            border-radius: 0.5vw;
+            margin: auto 0vw;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .add-button {
+                font-size: 17px;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .add-button {
+                height: 42px;
+                font-size: 15px;
+                border-radius: 6px;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .add-button {
+                width: 113px;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th {
+                background-color: $fourth-color;
+                padding: 1vw;
+                font-size: 1.3vw;
+                border-bottom: 1px solid $nineth-color;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 1440px) {
+                th {
+                    font-size: 19px;
+                }
+            }
+
+            @media only screen and (max-width: 960px) {
+                th {
+                    font-size: 17px;
+                }
+            }
+
+            th:first-child {
+                text-align: center;
+            }
+
+            th:last-child {
+                width: 20%;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 960px) {
+                th:last-child {
+                    width: 25%;
+                }
+            }
+
+            td {
+                font-size: 1.2vw;
+                border-bottom: 1px solid $nineth-color;
+                padding: 1vw;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 1440px) {
+                td {
+                    font-size: 17px;
+                }
+            }
+
+            @media only screen and (max-width: 960px) {
+                td {
+                    font-size: 15px;
+                }
+            }
+
+            td:first-child {
+                text-align: left;
+                padding: 1vw 1vw 1vw 3vw;
+            }
+
+            td:last-child {
+                text-align: center;
+
+                .edit-button {
+                    width: 4.6vw;
+                    margin-right: 0.35vw;
+                    padding: 0.65vw;
+                    background-color: $sixth-color;
+                    color: $second-color;
+                    border-radius: 0.25vw;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+
+                @media only screen and (max-width: 1280px) {
+                    .edit-button {
+                        width: 59px;
+                        margin-right: 4px;
+                        padding: 8px;
+                        border-radius: 3px;
+                    }
+                }
+
+                .delete-button {
+                    width: 4.6vw;
+                    margin-right: 0.35vw;
+                    padding: 0.65vw;
+                    background-color: $eighth-color;
+                    color: $second-color;
+                    border-radius: 0.25vw;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+
+                @media only screen and (max-width: 1280px) {
+                    .delete-button {
+                        width: 59px;
+                        margin-right: 4px;
+                        padding: 8px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.addeditservicemodal {
+    .modal-lg {
+        --bs-modal-width: 55vw;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .modal-lg {
+            --bs-modal-width: 563px;
+        }
+    }
+
+    .modal-title {
+        font-size: 1.5vw;
+        margin-left: 0.65vw;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .modal-title {
+            font-size: 19px;
+            margin-left: 8px;
+        }
+    }
+
+    .modal-body {
+        .error-form {
+            color: $eighth-color;
+            font-size: 1.2vw;
+            margin-top: 0.65vw;
+            margin-left: 1vw;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .error-form {
+                font-size: 15px;
+                margin-top: 8px;
+                margin-left: 13px;
+            }
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1.3vw;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            label {
+                font-size: 17px;
+            }
+        }
+
+        input {
+            height: 3.3vw;
+            border: 1px solid $seventh-color;
+            padding: 0.65vw;
+            border-radius: 0.5vw;
+            margin: 0.35vw 0vw;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            input {
+                height: 42px;
+                padding: 8px;
+                border-radius: 6px;
+                margin: 4px 0px;
+            }
+        }
+    }
+
+    .modal-footer {
+        justify-content: center;
+
+        .button-no {
+            width: 9.8vw;
+            padding: 0.65vw;
+            border-radius: 1.65vw;
+            background-color: $eighth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.2vw;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .button-no {
+                width: 125px;
+                padding: 8px;
+                border-radius: 21px;
+                margin: 8px;
+                font-size: 15px;
+            }
+        }
+
+        .button-yes {
+            width: 9.8vw;
+            padding: 0.65vw;
+            border-radius: 1.65vw;
+            background-color: $sixth-color;
+            color: $second-color;
+            text-align: center;
+            margin: 0.65vw;
+            font-size: 1.2vw;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .button-yes {
+                width: 125px;
+                padding: 8px;
+                border-radius: 21px;
+                margin: 8px;
+                font-size: 15px;
+            }
+        }
+    }
+}
