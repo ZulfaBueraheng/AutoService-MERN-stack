@@ -1,1 +1,1 @@
-Develop by Zulfa Bueraheng and Nurhayatee Mahadung
+Developed by Zulfa Bueraheng and Nurhayatee Mahadung
